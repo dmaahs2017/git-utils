@@ -39,7 +39,7 @@ answers = prompt(questions)
 print("Deleted branches:")
 try:
     for b in answers['branches']:
-        # b.delete(repo, b)
+        b.delete(repo, b)
         print(b)
 except KeyError:
     pass
